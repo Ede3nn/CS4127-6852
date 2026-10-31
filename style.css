@@ -1,0 +1,101 @@
+:root {
+    --green: #14463C;
+    --gold: #E0B04A;
+    --ivory: #FBF7EE;
+    --sand: #F0E6D0;
+    --ink: #1E2A26;
+    --teal: #1F6B73;
+}
+
+body {
+    margin: 0;
+    background-color: var(--ivory);
+    color: var(--ink);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--green);
+    color: var(--ivory);
+    padding: 1rem;
+}
+
+header a {
+    color: var(--ivory);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--gold);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+a[aria-current="page"] {
+    text-decoration: underline;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.hero {
+    background-color: var(--green);
+    color: var(--ivory);
+    padding: 3rem 0;
+}
+
+main a {
+    color: var(--teal);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--sand);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--ink);
+    border: 2px solid var(--green);
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: var(--green);
+    color: var(--ivory);
+}
+
+a:focus-visible {
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: var(--gold);
+    outline-offset:2px;
+}
+
+main a:focus-visible {
+    outline-color: var(--green);
+}
