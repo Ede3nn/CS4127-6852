@@ -29,7 +29,22 @@ if(form) {
         clearError(nameInput);
     }
 
-        // Check the name isn't empty.
+    const emailValue = emailInput.value.trim();
+    const atPosition = emailValue.indexOf('@');
 
-    });
-}
+    if (atPosition < 1 || emailValue.indexOf('.', atPosition + 2) === -1) {
+        showError(emailInput, 'Please enter a valid email address.');
+        valid = false;
+    } else {
+        clearError(emailInput);
+    }
+
+
+        // Check the name isn't empty.
+        // name check
+        // email check
+        // topic check
+        // message check
+
+    }); // Closes the submit handler
+}       // Closes if (form)
