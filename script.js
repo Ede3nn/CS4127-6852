@@ -39,12 +39,42 @@ if(form) {
         clearError(emailInput);
     }
 
+    // used to check if the topic is chosen or empty
+    if (topicInput.value === '') {
+        showError(topicInput, ' Please select a topic.');
+        valid = false;
+    } else {
+        clearError(topicInput);
+    }
+
+    // Check the message isn't empty
+    if (messageInput.value.trim() === '') {
+        showError(messageInput, 'Please enter your message.');
+        valid = false;
+    } else {
+        clearError(messageInput);
+    }
+
 
         // Check the name isn't empty.
         // name check
         // email check
         // topic check
         // message check
+
+            // if all inputs are valid, shows a success message
+            if (valid) {
+            status.textContent = 'Your enquiry has been submitted successfully!';
+            status.style.color = 'green';
+
+            // Clear all form inputs
+            form.reset();
+
+            
+            } else {
+                status.textContent = 'Please correct the errors in the form.';
+                status.style.color = 'red';
+            }
 
     }); // Closes the submit handler
 }       // Closes if (form)
