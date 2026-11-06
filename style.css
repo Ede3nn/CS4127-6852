@@ -5,6 +5,7 @@
     --sand: #F0E6D0;
     --ink: #1E2A26;
     --teal: #1F6B73;
+    --card-bg: #FFFFFF;
 }
 
 body {
@@ -73,10 +74,21 @@ main a {
 }
 
 .card {
-    background-color: var(--sand);
-    padding: 1rem;
-    border-radius: 8px;
+    background-color: var(--card-bg#F0E6D0);
+    padding: 1.25rem;
+    border-radius: 6px;
+    border: 1px solid rgba(20, 70, 60, 0.15);
+    border-left: 4px solid var(--gold);
 }
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    max-width: none;
+}
+
 
 .btn {
     display: inline-block;
