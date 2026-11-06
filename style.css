@@ -5,7 +5,7 @@
     --sand: #F0E6D0;
     --ink: #1E2A26;
     --teal: #1F6B73;
-    --card-bg: #FFFFFF;
+    --card-bg: var(--sand);
 }
 
 body {
@@ -74,7 +74,7 @@ main a {
 }
 
 .card {
-    background-color: var(--card-bg#F0E6D0);
+    background-color: var(--card-bg);
     padding: 1.25rem;
     border-radius: 6px;
     border: 1px solid rgba(20, 70, 60, 0.15);
