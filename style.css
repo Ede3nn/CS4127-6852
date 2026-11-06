@@ -6,6 +6,7 @@
     --ink: #1E2A26;
     --teal: #1F6B73;
     --card-bg: var(--sand);
+    --error: #A8432A;
 }
 
 body {
@@ -126,4 +127,32 @@ footer {
 
 footer a {
     color: var(--gold);
+}
+
+.field { margin-bottom: 1rem; }
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font: inherit;
+    color: var(--ink);
+    background-color: #FFFFFF;
+    border: 1px solid var(--ink);
+    border-radius: 6px;
+}
+
+.error {
+    color: var(--error);
+    margin: 0.25rem 0 0;
+    min-height: 1.2rem;
+}
+
+.invalid {
+    border: 2px solid var(--error);
 }
